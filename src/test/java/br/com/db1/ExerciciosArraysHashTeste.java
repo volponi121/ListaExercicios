@@ -2,10 +2,6 @@ package br.com.db1;
 
 import static org.junit.Assert.*;
 
-import java.util.ArrayList;
-import java.util.List;
-
-import org.junit.Assert;
 import org.junit.Test;
 
 public class ExerciciosArraysHashTeste {
@@ -29,7 +25,24 @@ public class ExerciciosArraysHashTeste {
 	public void  nomeParentesTeste(){
 		assertEquals("Arthur",chamada.nomeParentes().get(0));
 		assertEquals("Danielli",chamada.nomeParentes().get(1));
-
 	}
-		
+	
+	@Test
+	public void nomeCidadeTeste(){
+		assertEquals("Maringá",chamada.nomeCidade().get(0));
+		assertEquals("Marialva",chamada.nomeCidade().get(1));
+	}
+	
+	@Test
+	public void corOrdenadoTeste(){
+		assertEquals("Amarelo", chamada.corOrdenado().get(0));
+		assertEquals("Azul", chamada.corOrdenado().get(1));
+		assertEquals("Verde", chamada.corOrdenado().get(2));
+		assertEquals("Vermelho",chamada.corOrdenado().get(3));
+	}
+	
+	@Test
+	public void eliminaCor(){
+		assertEquals("Azul",chamada.eliminaCor().get(0));
+	}
 }
