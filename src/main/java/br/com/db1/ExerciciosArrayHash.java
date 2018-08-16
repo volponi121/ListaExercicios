@@ -12,4 +12,13 @@ public class ExerciciosArrayHash {
 		cores.add("Azul");
 		return cores;
 	}
+
+	public Integer quantidadeItensLista() {
+		List<String> itens = new ArrayList<String>();
+		itens.add("item1");
+		itens.add("item2");
+		itens.add("item3");
+		return itens.size();
+	}
+
 }
