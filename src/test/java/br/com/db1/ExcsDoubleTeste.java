@@ -4,7 +4,7 @@ import org.junit.Assert;
 import org.junit.Test;
 
 public class ExcsDoubleTeste {
-	public Double numero1=3.161d,numero2=4.153d,numero3=12.141d;
+	public Double numero1=3.161,numero2=4.153,numero3=12.141;
 	
 	ExcsDouble chamada = new ExcsDouble();
 	
@@ -28,7 +28,6 @@ public class ExcsDoubleTeste {
 	
 	@Test
 	public void areaTrianguloTeste() {
-		Assert.assertTrue(chamada.areaTriangulo(50.00d, 10.00d)==250.00d);
-		Assert.assertFalse(chamada.areaTriangulo(50.00d, 2.00d)==20.00d);
-	}
+		Assert.assertTrue(chamada.areaTriangulo(12.5d, 3.1d)==19.375);
+			}
 }

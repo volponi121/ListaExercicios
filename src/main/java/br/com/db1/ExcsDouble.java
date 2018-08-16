@@ -26,12 +26,11 @@ public class ExcsDouble {
 	}
 
 	public Double mediaTresValor(Double primeiroNum, Double segundoNum, Double terceiroNum) {
-		return (primeiroNum+segundoNum+terceiroNum)/3;
+		return (Double) (primeiroNum+segundoNum+terceiroNum)/3;
 	}
 
 	public Double areaTriangulo(Double base, Double altura) {
 		
-		return (base*altura)/2;
+		return (base*altura)/2d;
 	}
-	
 }
