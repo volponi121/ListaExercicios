@@ -1,6 +1,6 @@
 package br.com.db1;
 
-public class ExcsDouble {
+public class ExerciciosDouble {
 
 	
 	public Double menorValorDois(Double primeiroNum, Double segundoNum) {

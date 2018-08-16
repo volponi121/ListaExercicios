@@ -3,9 +3,9 @@ package br.com.db1;
 import org.junit.Assert;
 import org.junit.Test;
 
-public class ExcsIntegerTeste {
+public class ExerciciosIntegerTeste {
 	Integer x=5,y=31;
-	ExcsInteger chamada = new ExcsInteger();
+	ExerciciosInteger chamada = new ExerciciosInteger();
 	
 	@Test
 	public void somaDoisNumTeste(){

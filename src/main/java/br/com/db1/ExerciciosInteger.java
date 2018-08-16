@@ -1,6 +1,6 @@
 package br.com.db1;
 
-public class ExcsInteger {
+public class ExerciciosInteger {
 
 	public Integer somaDois(Integer primeiroNum, Integer segundoNum) {
 		return primeiroNum+segundoNum;

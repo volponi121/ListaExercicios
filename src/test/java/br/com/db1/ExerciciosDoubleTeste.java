@@ -3,10 +3,10 @@ package br.com.db1;
 import org.junit.Assert;
 import org.junit.Test;
 
-public class ExcsDoubleTeste {
+public class ExerciciosDoubleTeste {
 	public Double numero1=3.161,numero2=4.153,numero3=12.141;
 	
-	ExcsDouble chamada = new ExcsDouble();
+	ExerciciosDouble chamada = new ExerciciosDouble();
 	
 	@Test
 	public void menorValorDoisTeste() {
