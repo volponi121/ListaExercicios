@@ -1,11 +1,13 @@
 package br.com.db1;
 
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.Collections;
 import java.util.List;
 
 public class ExerciciosArrayHash {
+
+	List<Integer> numeroPar = new ArrayList<Integer>();
+	List<Integer> numeroImpar = new ArrayList<Integer>();
 
 	public List<String> coresFavoritas() {
 		List<String> cores = new ArrayList<String>();
@@ -50,9 +52,9 @@ public class ExerciciosArrayHash {
 		ordenado.add("Vermelho");
 		ordenado.add("Verde");
 		ordenado.add("Amarelo");
-		
-		Collections.sort(ordenado);	
-		
+
+		Collections.sort(ordenado);
+
 		return ordenado;
 	}
 
@@ -71,10 +73,22 @@ public class ExerciciosArrayHash {
 		removePessoa.add("Otacilio");
 		removePessoa.add("Arthur");
 		removePessoa.add("Danielli");
-		
-		Collections.sort(removePessoa);	
+
+		Collections.sort(removePessoa);
 		Collections.reverse(removePessoa);
 		return removePessoa;
+	}
+
+	public void numerosInteiros() {
+		for (Integer x = 1; x < 21; x++) {
+
+			if (x % 2 == 0) {
+				numeroPar.add(x);
+			continue;
+			}
+			numeroImpar.add(x);
+		}
+
 	}
 
 }

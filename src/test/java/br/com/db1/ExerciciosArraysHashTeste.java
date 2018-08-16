@@ -53,4 +53,20 @@ public class ExerciciosArraysHashTeste {
 		assertEquals("Danielli", chamada.parenteDecrescente().get(2));
 		assertEquals("Arthur",chamada.parenteDecrescente().get(3));
 	}
+	
+	@Test
+	public void numerosInteirosTeste(){
+		chamada.numerosInteiros();
+		assertTrue(chamada.numeroPar.get(0)	== 2);
+		assertTrue(chamada.numeroPar.get(1)	== 4);
+		assertTrue(chamada.numeroPar.get(2) == 6);
+		assertTrue(chamada.numeroPar.get(3) == 8);
+		assertTrue(chamada.numeroPar.get(4) == 10);
+		
+		assertTrue(chamada.numeroImpar.get(0) == 1);
+		assertTrue(chamada.numeroImpar.get(1) == 3);
+		assertTrue(chamada.numeroImpar.get(2) == 5);
+		assertTrue(chamada.numeroImpar.get(3) == 7);
+		assertTrue(chamada.numeroImpar.get(4) == 9);
+	}
 }
