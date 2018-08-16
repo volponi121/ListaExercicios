@@ -21,4 +21,16 @@ public class ExerciciosArrayHash {
 		return itens.size();
 	}
 
+	public List<String> nomeParentes() {
+		List<String> nome = new ArrayList<String>();
+		nome.add("Glaucia");
+		nome.add("Otacilio");
+		nome.add("Arthur");
+		nome.add("Danielli");
+		nome.add("Bernardo");
+		nome.remove(0);
+		nome.remove(0);
+		return nome;
+	}
+
 }

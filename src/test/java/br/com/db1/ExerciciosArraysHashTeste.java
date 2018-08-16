@@ -22,9 +22,14 @@ public class ExerciciosArraysHashTeste {
 	@Test
 	public void quantidadeItensListaTeste(){
 		assertTrue(chamada.quantidadeItensLista() == 3);
-		assertTrue(chamada.quantidadeItensLista() == 3);
-		assertTrue(chamada.quantidadeItensLista() == 3);
-		assertTrue(chamada.quantidadeItensLista() == 3);
+		assertFalse(chamada.quantidadeItensLista() == 10);
 	}
 	
+	@Test
+	public void  nomeParentesTeste(){
+		assertEquals("Arthur",chamada.nomeParentes().get(0));
+		assertEquals("Danielli",chamada.nomeParentes().get(1));
+
+	}
+		
 }
