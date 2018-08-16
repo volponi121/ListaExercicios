@@ -56,4 +56,25 @@ public class ExerciciosArrayHash {
 		return ordenado;
 	}
 
+	public List<String> eliminaCor() {
+		List<String> cor = new ArrayList<String>();
+		cor.add("Azul");
+		cor.add("Vermelho");
+		cor.add("Verde");
+		cor.remove(0);
+		return cor;
+	}
+
+	public List<String> parenteDecrescente() {
+		List<String> removePessoa = new ArrayList<String>();
+		removePessoa.add("Glaucia");
+		removePessoa.add("Otacilio");
+		removePessoa.add("Arthur");
+		removePessoa.add("Danielli");
+		
+		Collections.sort(removePessoa);	
+		Collections.reverse(removePessoa);
+		return removePessoa;
+	}
+
 }

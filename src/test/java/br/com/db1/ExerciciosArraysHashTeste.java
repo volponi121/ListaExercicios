@@ -42,7 +42,15 @@ public class ExerciciosArraysHashTeste {
 	}
 	
 	@Test
-	public void eliminaCor(){
-		assertEquals("Azul",chamada.eliminaCor().get(0));
+	public void eliminaCorTeste(){
+		assertEquals("Vermelho",chamada.eliminaCor().get(0));
+	}
+	
+	@Test
+	public void parenteDecrescenteTeste(){
+		assertEquals("Otacilio", chamada.parenteDecrescente().get(0));
+		assertEquals("Glaucia", chamada.parenteDecrescente().get(1));
+		assertEquals("Danielli", chamada.parenteDecrescente().get(2));
+		assertEquals("Arthur",chamada.parenteDecrescente().get(3));
 	}
 }
