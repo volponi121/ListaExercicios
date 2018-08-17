@@ -1,6 +1,7 @@
 package br.com.db1;
 
 import static org.junit.Assert.*;
+import static org.junit.jupiter.api.Assertions.assertFalse;
 
 import org.junit.Test;
 
@@ -68,5 +69,25 @@ public class ExerciciosArraysHashTeste {
 		assertTrue(chamada.numeroImpar.get(2) == 5);
 		assertTrue(chamada.numeroImpar.get(3) == 7);
 		assertTrue(chamada.numeroImpar.get(4) == 9);
+	}
+	
+	@Test
+	public void nomesDistintosTeste() {
+		assertEquals("Ana",chamada.nomesDistintos().get(0));
+		assertEquals("Ana Laura",chamada.nomesDistintos().get(1));
+		assertEquals("Clecio",chamada.nomesDistintos().get(2));
+		assertEquals("Joaldo",chamada.nomesDistintos().get(3));	
+		assertEquals("Jose",chamada.nomesDistintos().get(4));
+		assertEquals("José",chamada.nomesDistintos().get(5));
+		assertEquals("Marcos",chamada.nomesDistintos().get(6));
+		assertEquals("Maria",chamada.nomesDistintos().get(7));
+		assertEquals("Roberval",chamada.nomesDistintos().get(8));
+		assertEquals("Rodolfo",chamada.nomesDistintos().get(9));
+		assertEquals("Rodolpho",chamada.nomesDistintos().get(10));
+		assertEquals("Vagner",chamada.nomesDistintos().get(11));
+		assertEquals("Wagner",chamada.nomesDistintos().get(12));
+		
+		assertFalse("José"==chamada.nomesDistintos().get(6));
+		
 	}
 }
