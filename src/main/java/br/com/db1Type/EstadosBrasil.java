@@ -26,7 +26,7 @@ public enum EstadosBrasil {
 		return estado;
 	}
 
-	public List<EstadosBrasil> regiaoSul() {
+	public static List<EstadosBrasil> regiaoSul() {
 		List<EstadosBrasil> sul = new ArrayList<EstadosBrasil>();
 
 		sul.add(PARANA);
@@ -38,7 +38,7 @@ public enum EstadosBrasil {
 		return sul;
 	}
 
-	public List<EstadosBrasil> regiaoSudeste() {
+	public static List<EstadosBrasil> regiaoSudeste() {
 		List<EstadosBrasil> sudeste = new ArrayList<EstadosBrasil>();
 
 		sudeste.add(SAO_PAULO);
@@ -50,7 +50,7 @@ public enum EstadosBrasil {
 		return sudeste;
 	}
 
-	public List<EstadosBrasil> regiaoCentroOeste() {
+	public static List<EstadosBrasil> regiaoCentroOeste() {
 		List<EstadosBrasil> centroOeste = new ArrayList<EstadosBrasil>();
 
 		centroOeste.add(MATO_GROSSO);
@@ -61,7 +61,7 @@ public enum EstadosBrasil {
 		return centroOeste;
 	}
 	
-	public List<EstadosBrasil> regiaoNordeste() {
+	public static List<EstadosBrasil> regiaoNordeste() {
 		List<EstadosBrasil> nordeste = new ArrayList<EstadosBrasil>();
 
 		nordeste.add(BAHIA);
@@ -79,7 +79,7 @@ public enum EstadosBrasil {
 		return nordeste;
 	}
 	
-	public List<EstadosBrasil> regiaoNorte() {
+	public static List<EstadosBrasil> regiaoNorte() {
 		List<EstadosBrasil> norte = new ArrayList<EstadosBrasil>();
 
 		norte.add(ACRE);
