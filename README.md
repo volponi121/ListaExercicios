@@ -1,4 +1,4 @@
 # ListaExercicios
-Exercicios de Integer/Double/String
+Exercicios de Integer/Double/String/Enum
 
 Em Andamento - Falta exercicios de string
