@@ -2,16 +2,14 @@ package br.com.db1;
 
 import java.util.ArrayList;
 import java.util.Collections;
-import java.util.HashSet;
-import java.util.LinkedList;
 import java.util.List;
+import java.util.TreeSet;
 
 public class ExerciciosArrayHash {
 
 	List<Integer> numeroPar = new ArrayList<Integer>();
 	List<Integer> numeroImpar = new ArrayList<Integer>();
-	
-	
+
 	public List<String> coresFavoritas() {
 		List<String> cores = new ArrayList<String>();
 		cores.add("Verde");
@@ -87,16 +85,16 @@ public class ExerciciosArrayHash {
 
 			if (x % 2 == 0) {
 				numeroPar.add(x);
-			continue;
+				continue;
 			}
 			numeroImpar.add(x);
 		}
 
 	}
-	
-	public LinkedList<String> nomesDistintos(){
-		List<String> nomesDiferentes = new ArrayList<String>();
-		
+
+	public TreeSet<String> nomesDistintos() {
+		TreeSet<String> nomesDiferentes = new TreeSet<String>();
+
 		nomesDiferentes.add("Ana");
 		nomesDiferentes.add("Ana Laura");
 		nomesDiferentes.add("Clecio");
@@ -104,19 +102,16 @@ public class ExerciciosArrayHash {
 		nomesDiferentes.add("Jose");
 		nomesDiferentes.add("José");
 		nomesDiferentes.add("José");
-		nomesDiferentes.add("Marcos");	
+		nomesDiferentes.add("Marcos");
 		nomesDiferentes.add("Maria");
 		nomesDiferentes.add("Roberval");
 		nomesDiferentes.add("Rodolfo");
 		nomesDiferentes.add("Rodolpho");
 		nomesDiferentes.add("Vagner");
 		nomesDiferentes.add("Wagner");
-		
-		nomesDiferentes = colocandoItens;
-		
-		Collections.sort(nomesDiferentes);
-		
-		return  nomesDiferentes;
+
+		return nomesDiferentes;
+
 	}
 
 }
