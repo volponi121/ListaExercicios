@@ -6,15 +6,13 @@ import java.util.List;
 
 public enum EstadosBrasil {
 
-	ACRE("Acre"), ALAGOAS("Alagoas"), AMAPA("Amapa"), AMAZONAS("Amazonas"), BAHIA(
-			"Bahia"), CEARA("Ceara"), DISTRITO_FEDERAL("Distrito Federal"), ESPIRITO_SANTO(
-			"Espirito Santo"), GOIAS("Goiás"), MARANHAO("Maranhão"), MATO_GROSSO(
-			"Mato grosso"), MATO_GROSSO_DO_SUL("Mato Grosso do Sul"), MINAS_GERAIS(
-			"Minas Gerais"), PARA("Pará"), PARAIBA("Paraíba"), PARANA("Paraná"), PERNAMBUCO(
-			"Pernambuco"), PIAUI("Piauí"), RIO_DE_JANEIRO("Rio de Janeiro"), RIO_GRANDE_DO_NORTE(
-			"Rio Grande Do Norte"), RIO_GRANDE_DO_SUL("Rio Grande do Sul"), RONDONIA(
-			"Rondônia"), RORAIMA("Roraima"), SANTA_CATARINA("Santa Catarina"), SAO_PAULO(
-			"São Paulo"), SERGIPE("Sergipe"), TOCANTINS("Tocantins");
+	ACRE("Acre"), ALAGOAS("Alagoas"), AMAPA("Amapa"), AMAZONAS("Amazonas"), BAHIA("Bahia"), CEARA("Ceara"),
+	DISTRITO_FEDERAL("Distrito Federal"), ESPIRITO_SANTO("Espirito Santo"), GOIAS("Goiás"), MARANHAO("Maranhão"),
+	MATO_GROSSO("Mato Grosso"), MATO_GROSSO_DO_SUL("Mato Grosso do Sul"), MINAS_GERAIS("Minas Gerais"), PARA("Pará"),
+	PARAIBA("Paraíba"), PARANA("Paraná"), PERNAMBUCO("Pernambuco"), PIAUI("Piauí"), RIO_DE_JANEIRO("Rio de Janeiro"),
+	RIO_GRANDE_DO_NORTE("Rio Grande Do Norte"), RIO_GRANDE_DO_SUL("Rio Grande do Sul"), RONDONIA("Rondônia"),
+	RORAIMA("Roraima"), SANTA_CATARINA("Santa Catarina"), SAO_PAULO("São Paulo"), SERGIPE("Sergipe"),
+	TOCANTINS("Tocantins");
 
 	private String estado;
 
@@ -32,9 +30,8 @@ public enum EstadosBrasil {
 		sul.add(PARANA);
 		sul.add(SANTA_CATARINA);
 		sul.add(RIO_GRANDE_DO_SUL);
-		
 		Collections.sort(sul);
-		
+
 		return sul;
 	}
 
@@ -45,8 +42,8 @@ public enum EstadosBrasil {
 		sudeste.add(MINAS_GERAIS);
 		sudeste.add(ESPIRITO_SANTO);
 		sudeste.add(RIO_DE_JANEIRO);
-		
 		Collections.sort(sudeste);
+
 		return sudeste;
 	}
 
@@ -56,11 +53,11 @@ public enum EstadosBrasil {
 		centroOeste.add(MATO_GROSSO);
 		centroOeste.add(MATO_GROSSO_DO_SUL);
 		centroOeste.add(GOIAS);
-		
 		Collections.sort(centroOeste);
+
 		return centroOeste;
 	}
-	
+
 	public static List<EstadosBrasil> regiaoNordeste() {
 		List<EstadosBrasil> nordeste = new ArrayList<EstadosBrasil>();
 
@@ -73,12 +70,11 @@ public enum EstadosBrasil {
 		nordeste.add(PARAIBA);
 		nordeste.add(RIO_GRANDE_DO_NORTE);
 		nordeste.add(CEARA);
-		
 		Collections.sort(nordeste);
-		
+
 		return nordeste;
 	}
-	
+
 	public static List<EstadosBrasil> regiaoNorte() {
 		List<EstadosBrasil> norte = new ArrayList<EstadosBrasil>();
 
@@ -89,9 +85,9 @@ public enum EstadosBrasil {
 		norte.add(AMAPA);
 		norte.add(PARA);
 		norte.add(TOCANTINS);
-		
+
 		Collections.sort(norte);
-		
+
 		return norte;
 	}
 }
