@@ -3,11 +3,11 @@ package br.com.db1;
 public class ExercicioStrings {
 
 	public String nomeMaiusculo(String nome) {
-		return nome.toUpperCase();
+		return nome=nome.toUpperCase();
 	}
 
 	public String nomeMinusculo(String nome) {
-		return nome.toLowerCase();
+		return nome=nome.toLowerCase();
 	}
 
 	public int quantidadeLetras(String db1) {
