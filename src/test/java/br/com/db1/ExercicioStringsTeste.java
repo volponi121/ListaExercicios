@@ -10,26 +10,26 @@ import org.junit.Test;
 public class ExercicioStringsTeste {
 	ExercicioStrings chamada = new ExercicioStrings();
 
-	public String nomeminusculo= "fabio",nomemaiusculo= "FABIO";
-	public String db1= "DB1START",db1branco= " DB1START ",meunome= "Fabio Augusto Volponi de Souza";
-	public String frutas = "banana,maçã,melancia";
-	public String texto = "Oi Pessoal";
+	public final static String NOMEMINUSCULO= "fabio",NOMEMAIUSCULO= "FABIO";
+	public final static String DB1= "DB1START",db1branco= " DB1START ",meunome= "Fabio Augusto Volponi de Souza";
+	public final static String FRUTAS = "banana,maçã,melancia";
+	public final static String TEXTO = "Oi Pessoal";
 	@Test
 	public void letrasMaiusculasTeste() {
-		assertEquals("FABIO", chamada.nomeMaiusculo(nomeminusculo));
-		assertNotEquals("Oi Pessoal", chamada.nomeMaiusculo(nomeminusculo));
+		assertEquals("FABIO", chamada.nomeMaiusculo(NOMEMINUSCULO));
+		assertNotEquals("Oi Pessoal", chamada.nomeMaiusculo(NOMEMINUSCULO));
 	}
 
 	@Test
 	public void letrasMinusculasTeste() {
-		assertEquals("fabio", chamada.nomeMinusculo(nomemaiusculo));
-		assertNotEquals("FABIO", chamada.nomeMinusculo(nomemaiusculo));
+		assertEquals("fabio", chamada.nomeMinusculo(NOMEMAIUSCULO));
+		assertNotEquals("FABIO", chamada.nomeMinusculo(NOMEMAIUSCULO));
 	}
 
 	@Test
 	public void quantidadeLetrasTeste(){
-		assertTrue(8==chamada.quantidadeLetras(db1));
-		assertFalse(10==chamada.quantidadeLetras(db1));
+		assertTrue(8==chamada.quantidadeLetras(DB1));
+		assertFalse(10==chamada.quantidadeLetras(DB1));
 	}
 	
 	@Test
@@ -70,21 +70,21 @@ public class ExercicioStringsTeste {
 	
 	@Test
 	public void separaTextoTeste() {
-		assertEquals("banana maçã melancia", chamada.separaTexto(frutas));
-		assertNotEquals("banana,maça,melancia", chamada.separaTexto(frutas));
+		assertEquals("banana maçã melancia", chamada.separaTexto(FRUTAS));
+		assertNotEquals("banana,maça,melancia", chamada.separaTexto(FRUTAS));
 	}
 	
 	@Test
 	public void quantidadeVogaisTeste() {
 		
-		assertTrue(chamada.quantidadeVogais("OI PESSOAL")==5);
+		assertTrue(chamada.quantidadeVogais(TEXTO)==5);
 		
 	}
 	
 	@Test
 	public void textoInvertidoTeste() {
-		assertEquals("laosseP iO", chamada.textoInvertido(texto));
-		assertNotEquals("Oi Pessoal", chamada.textoInvertido(texto));
+		assertEquals("laosseP iO", chamada.textoInvertido(TEXTO));
+		assertNotEquals("Oi Pessoal", chamada.textoInvertido(TEXTO));
 	}
 	
 	

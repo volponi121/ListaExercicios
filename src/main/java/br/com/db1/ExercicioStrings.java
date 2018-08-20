@@ -44,7 +44,7 @@ public class ExercicioStrings {
 
 	public Integer quantidadeVogais(String texto) {
 		
-		texto.toUpperCase();
+		texto = texto.toUpperCase();
 		Integer contador = 0;
 
 		for (Integer x = 0; x < texto.length(); x++) {
