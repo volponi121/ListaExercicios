@@ -32,8 +32,5 @@ public class Telefone {
 		this.tipos = tipos;
 	}
 
-	public String formataTelefone() {
-		return "(" + ddd + ")" + numero;
-	}
-
+	
 }
