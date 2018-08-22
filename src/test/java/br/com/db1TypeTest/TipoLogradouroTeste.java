@@ -1,11 +1,11 @@
-package br.com.db1TypeTest;
+package br.com.db1typetest;
 
 import org.junit.Assert;
 
 
 import org.junit.Test;
 
-import br.com.db1Type.TipoLogradouro;
+import br.com.db1type.TipoLogradouro;
 
 public class TipoLogradouroTeste {
 	

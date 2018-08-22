@@ -1,4 +1,4 @@
-package br.com.db1Type;
+package br.com.db1type;
 
 public enum TipoLogradouro {
 	

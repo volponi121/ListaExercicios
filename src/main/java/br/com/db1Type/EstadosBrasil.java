@@ -1,4 +1,4 @@
-package br.com.db1Type;
+package br.com.db1type;
 
 import java.util.ArrayList;
 import java.util.Collections;

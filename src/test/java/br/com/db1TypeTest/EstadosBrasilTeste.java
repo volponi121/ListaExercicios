@@ -1,11 +1,11 @@
-package br.com.db1TypeTest;
+package br.com.db1typetest;
 
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertTrue;
 
 import org.junit.Test;
 
-import br.com.db1Type.EstadosBrasil;
+import br.com.db1type.EstadosBrasil;
 
 public class EstadosBrasilTeste {
 	
