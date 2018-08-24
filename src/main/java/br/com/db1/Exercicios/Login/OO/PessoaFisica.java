@@ -1,4 +1,4 @@
-package br.com.db1.Exercicios.Login.OO;
+package br.com.db1.Exercicios.Login.oo;
 
 public class PessoaFisica extends Pessoa{
 	private String cpf;

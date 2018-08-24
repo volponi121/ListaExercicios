@@ -1,4 +1,4 @@
-package br.com.db1.Exercicios.Login.OO;
+package br.com.db1.Exercicios.Login.oo;
 
 public class Endereco {
 	private String tipoLogradouro;

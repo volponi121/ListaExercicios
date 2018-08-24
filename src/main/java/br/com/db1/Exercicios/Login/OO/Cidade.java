@@ -1,4 +1,4 @@
-package br.com.db1.Exercicios.Login.OO;
+package br.com.db1.Exercicios.Login.oo;
 
 import br.com.d1b1type.login.oo.TipoUf;
 
